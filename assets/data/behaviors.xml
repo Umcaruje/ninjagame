@@ -82,4 +82,19 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_11_11_DontGoOffScreen" classname="scripts.Design_11_11_DontGoOffScreen" desc="" description="" design="true" drawOrder="0" id="11" name="DontGoOffScreen" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_12_12_CameraFollow" classname="scripts.Design_12_12_CameraFollow" desc="" description="" design="true" drawOrder="0" id="12" name="CameraFollow" oid="-1" package="scripts" shared="false" type="scene">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Player" hidden="false" id="1" name="_Player" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="LastPlaverPosition" hidden="true" id="2" name="_LastPlaverPosition" order="1"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
 </pack>

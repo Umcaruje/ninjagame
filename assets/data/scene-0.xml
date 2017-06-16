@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="3" extheight="608" extwidth="768" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="100.0" height="480" id="0" name="TestScene" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="640">
+<scene depth="1" desc="" eventsnippetid="3" extheight="608" extwidth="1408" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="200.0" height="480" id="0" name="TestScene" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="1280">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
         <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Forest" opacity="100" order="1" rid="6" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
@@ -7,9 +7,9 @@
     </layers>
     <joints/>
     <regions>
-        <region b="64" g="64" h="480" id="0" name="Left Region" pts="4,-25.0,240.0,25.0,240.0,25.0,-240.0,-25.0,-240.0" r="64" type="box" w="50" x="-50" y="0"/>
-        <region b="64" g="64" h="480" id="1" name="Right Region" pts="4,-25.0,240.0,25.0,240.0,25.0,-240.0,-25.0,-240.0" r="64" type="box" w="50" x="640" y="0"/>
-        <region b="64" g="64" h="50" id="2" name="Bottom Region" pts="4,-320.0,25.0,320.0,25.0,320.0,-25.0,-320.0,-25.0" r="64" type="box" w="640" x="1" y="480"/>
+        <region b="64" g="64" h="480" id="0" name="Left Region" pts="4,-25.0,-240.0,25.0,-240.0,25.0,240.0,-25.0,240.0" r="64" type="box" w="50" x="-50" y="0"/>
+        <region b="64" g="64" h="480" id="1" name="Right Region" pts="4,-25.0,-240.0,25.0,-240.0,25.0,240.0,-25.0,240.0" r="64" type="box" w="50" x="1280" y="0"/>
+        <region b="64" g="64" h="50" id="2" name="Bottom Region" pts="4,-320.0,-25.0,320.0,-25.0,320.0,25.0,-320.0,25.0" r="64" type="box" w="640" x="1" y="480"/>
     </regions>
     <terrainRegions/>
     <actors>
@@ -40,9 +40,12 @@
                     <prop id="2" list="0" val="1"/>
                     <prop id="3" list="0" val="2"/>
                 </s>
+                <s enabled="true" id="11">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="2" c="true" group="4" id="2" name="Zombie 2" sx="1.0" sy="1.0" x="394" y="239" z="0">
+        <actor a="0.0" aid="2" c="true" group="4" id="2" name="Zombie 2" sx="1.0" sy="1.0" x="322" y="241" z="0">
             <snippets>
                 <s enabled="true" id="1"/>
                 <s enabled="true" id="7">
@@ -53,13 +56,41 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="3" c="false" group="5" id="8" name="Key 3" sx="1.0" sy="1.0" x="564" y="146" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="5" id="8" name="Key 3" sx="1.0" sy="1.0" x="1174" y="282" z="0"/>
+        <actor a="0.0" aid="4" c="true" group="4" id="2" name="Zombie 4" sx="1.0" sy="1.0" x="1134" y="237" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="7">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2" list="0" val="Walk"/>
+                    <prop id="3" list="0" val="Idle"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="5" c="true" group="4" id="2" name="Zombie 5" sx="1.0" sy="1.0" x="974" y="241" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="7">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2" list="0" val="Walk"/>
+                    <prop id="3" list="0" val="Idle"/>
+                </s>
+            </snippets>
+        </actor>
     </actors>
-    <snippets/>
+    <snippets>
+        <s enabled="true" id="12">
+            <prop id="1" list="0" val="1"/>
+        </s>
+    </snippets>
     <terrain>
-        <p pts="4,128.0,0.0,128.0,32.0,0.0,32.0,0.0,0.0" x="0.0" y="192.0"/>
+        <p pts="4,0.0,32.0,0.0,0.0,128.0,0.0,128.0,32.0" x="0.0" y="192.0"/>
+        <p pts="4,0.0,32.0,0.0,0.0,128.0,0.0,128.0,32.0" x="704.0" y="192.0"/>
         <p pts="4,128.0,0.0,128.0,32.0,0.0,32.0,0.0,0.0" x="512.0" y="192.0"/>
         <p pts="4,256.0,0.0,256.0,32.0,0.0,32.0,0.0,0.0" x="192.0" y="320.0"/>
+        <p pts="4,384.0,0.0,384.0,32.0,0.0,32.0,0.0,0.0" x="832.0" y="320.0"/>
     </terrain>
     <atlases members="" retainAtlases="true"/>
 </scene>
