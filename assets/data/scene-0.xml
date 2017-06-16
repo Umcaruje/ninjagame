@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="3" extheight="608" extwidth="1408" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="200.0" height="480" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="1280">
+<scene depth="1" desc="" eventsnippetid="3" extheight="608" extwidth="1408" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="200.0" height="480" id="0" name="TestScene" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="1280">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
         <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Forest" opacity="100" order="1" rid="6" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
@@ -7,9 +7,9 @@
     </layers>
     <joints/>
     <regions>
-        <region b="64" g="64" h="480" id="0" name="Left Region" pts="4,-25.0,-240.0,25.0,-240.0,25.0,240.0,-25.0,240.0" r="64" type="box" w="50" x="-50" y="0"/>
-        <region b="64" g="64" h="480" id="1" name="Right Region" pts="4,-25.0,-240.0,25.0,-240.0,25.0,240.0,-25.0,240.0" r="64" type="box" w="50" x="1280" y="0"/>
-        <region b="64" g="64" h="50" id="2" name="Bottom Region" pts="4,-640.0,25.0,640.0,25.0,640.0,-25.0,-640.0,-25.0" r="64" type="box" w="1280" x="1" y="480"/>
+        <region b="64" g="64" h="480" id="0" name="Left Region" pts="4,-25.0,240.0,25.0,240.0,25.0,-240.0,-25.0,-240.0" r="64" type="box" w="50" x="-50" y="0"/>
+        <region b="64" g="64" h="480" id="1" name="Right Region" pts="4,-25.0,240.0,25.0,240.0,25.0,-240.0,-25.0,-240.0" r="64" type="box" w="50" x="1280" y="0"/>
+        <region b="64" g="64" h="50" id="2" name="Bottom Region" pts="4,-640.0,-25.0,640.0,-25.0,640.0,25.0,-640.0,25.0" r="64" type="box" w="1280" x="1" y="480"/>
     </regions>
     <terrainRegions/>
     <actors>
@@ -29,7 +29,7 @@
                     <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="1" list="0" val="3"/>
                     <prop id="2" list="0" val="4"/>
-                    <prop id="3" list="1" val=""/>
+                    <prop id="3" list="0" val=""/>
                     <prop id="4" list="0" val="false"/>
                     <prop id="5" list="0" val="2"/>
                     <prop id="6" list="0" val="Attack"/>
@@ -83,6 +83,7 @@
     <snippets>
         <s enabled="true" id="12">
             <prop id="1" list="0" val="1"/>
+            <prop id="2" list="0" val="0"/>
         </s>
     </snippets>
     <terrain>
