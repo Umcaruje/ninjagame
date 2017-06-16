@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet actorid="0" attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="0" name="ActorEvents_0" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="2" attachedevent="true" class="scripts.ActorEvents_2" classname="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_2" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="4" attachedevent="true" class="scripts.ActorEvents_4" classname="scripts.ActorEvents_4" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" name="ActorEvents_4" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="3" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_4_4_NinjaMovement" classname="scripts.Design_4_4_NinjaMovement" desc="" description="" design="true" drawOrder="0" id="4" name="Ninja_Movement" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Run_Animation" hidden="false" id="1" name="_RunAnimation" order="1"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Idle_Animation" hidden="false" id="2" name="_IdleAnimation" order="2"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Jump_Animation" hidden="false" id="3" name="_JumpAnimation" order="3"/>
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="Grounded?" hidden="true" id="4" name="_Grounded" order="4"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="In_Air?" hidden="true" id="5" name="_InAir" order="5"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Attack_Animation" hidden="false" id="6" name="_AttackAnimation" order="6"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="2" name="collide" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_5_5_DeathByEnemy" classname="scripts.Design_5_5_DeathByEnemy" desc="" description="" design="true" drawOrder="0" id="5" name="DeathByEnemy" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="LivesAmount" hidden="false" id="1" name="_LivesAmount" order="1"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Heart" hidden="false" id="2" name="_Heart" order="2"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="List of Health indicators" hidden="true" id="3" name="_ListofHealthindicators" order="3"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Damage delay" hidden="true" id="4" name="_Damagedelay" order="4"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="EnemyActor" hidden="false" id="5" name="_EnemyActor" order="5"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="AttackAnimation" hidden="false" id="6" name="_AttackAnimation" order="6"/>
+        <blocks/>
+        <events>
+            <event displayName="Type - Type" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_6_6_DeathByFalling" classname="scripts.Design_6_6_DeathByFalling" desc="" description="" design="true" drawOrder="0" id="6" name="DeathByFalling" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <region default="" defaultValue="" desc="" dropdown="" fullname="Left Region" hidden="false" id="1" name="_LeftRegion" order="1"/>
+        <region default="" defaultValue="" desc="" dropdown="" fullname="Right Region" hidden="false" id="2" name="_RightRegion" order="2"/>
+        <region default="" defaultValue="" desc="" dropdown="" fullname="Bottom Region" hidden="false" id="3" name="_BottomRegion" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="false" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Enters Region" enabled="true" id="2" name="event-actor-region" order="3" repeats="true"/>
+            <event displayName="Enters Region" enabled="true" id="3" name="event-actor-region" order="4" repeats="true"/>
+            <event displayName="Enters Region" enabled="true" id="4" name="event-actor-region" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_7_7_ZombieAI" classname="scripts.Design_7_7_ZombieAI" desc="" description="" design="true" drawOrder="0" id="7" name="ZombieAI" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Player" hidden="false" id="1" name="_Player" order="1"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Walk_Animation" hidden="false" id="2" name="_WalkAnimation" order="2"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Idle_Animation" hidden="false" id="3" name="_IdleAnimation" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="8" attachedevent="true" class="scripts.ActorEvents_8" classname="scripts.ActorEvents_8" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="8" name="ActorEvents_8" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_9_9_KeyTouch" classname="scripts.Design_9_9_KeyTouch" desc="" description="" design="true" drawOrder="0" id="9" name="KeyTouch" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Group" enabled="true" id="2" name="event-collide-actortogroup" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="10" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+</pack>
