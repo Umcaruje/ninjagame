@@ -75,7 +75,6 @@
     </attcats>
     <props/>
     <attributes>
-        <list cid="-1" id="1" name="List of Health indicators" save="true" val="list"/>
         <number cid="-1" id="0" name="LivesAmount" save="true" value="0.0"/>
     </attributes>
     <collisions>
@@ -107,7 +106,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,4,6,7,8,10,13," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,4,6,7,8,10,13,14," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>
